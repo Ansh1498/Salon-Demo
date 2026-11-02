@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brown: #4A4237;
+  --color-surface: #564D41;
+  --color-cream: #F5F0E6;
+  --color-tan: #A89B82;
+  --color-sand: #C9BCA3;
+  --color-button: #B8A98C;
+  --color-ink: #2E2820;
+
+  --font-serif: "Instrument Serif", serif;
+  --font-sans: "Jost", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-brown text-cream font-sans antialiased;
+}
+
+body {
+  overflow-x: hidden; /* mobile par side-scroll nahi aayega */
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-sand);
+  outline-offset: 3px; /* keyboard se chalane wale ko focus dikhega */
+}
